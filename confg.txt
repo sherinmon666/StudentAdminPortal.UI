@@ -1,0 +1,37 @@
+{
+  "AppId": "e5bd0945-3a41-47eb-832b-901fd3fd3aff",
+  "TokenKey": "Deserv$ecret!123",
+  "DeservConfig": {
+    "AllowedOrigins": "http://localhost:8083;https://deservqa.ey.com,https://deservuat.ey.com",
+    "JsonLogsInDevelopmentMode": false,
+    "TokenKey": "hHQV3R4Hg!K,6JF2VcX]Y|;)$}nTQ<K(;O",
+    "ConnectionStrings": {
+      "DeservDatabase": "Server = deserv-postgres.deserv-postgres.svc.cluster.local; port = 5432; user id = deservadmin; password = DeservR0ckz!; database = deservdb; pooling = true"
+    }
+  },
+  "AllowedHosts": "*",
+
+  "ConnectionStrings": {
+    "bscConnStr": "Data Source=eunuint000sql01.database.windows.net;Initial Catalog=EUNPINTHI7SDB01;User ID=EUNPINTHI7SDB01user01;Password=FRODkG&*n`khFL5)*#;MultipleActiveResultSets=true;",
+    "offlineDBConnStr": "Data Source=eunuint000sql01.database.windows.net;Initial Catalog=EUNPINTH7USDB01;User ID=DPS-AZPoffSQLEYTSBSC;Password=bhzKH&bz4$V#=pT=;MultipleActiveResultSets=true;"
+  },
+  "FilePath": "C:\\Projects\\BSC_Dashboard\\bscdashboard-api\\BSCApp\\Resources",
+
+  "IpRateLimiting": {
+    "EnableEndpointRateLimiting": true,
+    "StackBlockedRequests": false,
+    "RealIPHeader": "X-Real-IP",
+    "ClientIdHeader": "X-ClientId",
+    "HttpStatusCode": 429,
+    "IpWhitelist": [],
+    "EndpointWhitelist": [],
+    "ClientWhitelist": [],
+    "GeneralRules": [
+      {
+        "Endpoint": "*",
+        "Period": "1s",
+        "Limit": 20
+      }
+    ]
+  }
+}
